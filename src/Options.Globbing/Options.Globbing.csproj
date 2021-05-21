@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>Dazinator.Extensions.Options.Globbing</AssemblyName>
+        <RootNamespace>Dazinator.Extensions.Options.Globbing</RootNamespace>
+    </PropertyGroup>
+  
+  <ItemGroup>  
+    <PackageReference Include="DotNet.Glob" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
