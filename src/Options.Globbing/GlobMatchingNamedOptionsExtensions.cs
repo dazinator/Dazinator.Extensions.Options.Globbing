@@ -48,7 +48,7 @@ namespace Microsoft.Extensions.DependencyInjection
                 {
                     var innerFactoryInstance =
                         ActivatorUtilities.CreateInstance(sp, innerFactoryType);
-                    var args = new object[] {innerFactoryInstance};
+                    var args = new object[] { innerFactoryInstance };
                     return (GlobMatchingNamedOptionsFactory<TOptions>)ActivatorUtilities.CreateInstance(sp,
                         typeof(GlobMatchingNamedOptionsFactory<TOptions>), args);
                 });
