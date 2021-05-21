@@ -1,3 +1,6 @@
+[![.NET](https://github.com/dazinator/Dazinator.Extensions.Options.Globbing/actions/workflows/dotnet.yml/badge.svg)](https://github.com/dazinator/Dazinator.Extensions.Options.Globbing/actions/workflows/dotnet.yml)
+
+
 ## Features
 
 When configuring named options, you usually have to configure each name individually.
