@@ -42,7 +42,7 @@ jobs:
       
       - name: Push changes
         #if: steps.command.outputs.command-name && steps.command.outputs.command-arguments == 'format' && steps.format.outputs.has-changes == 'true'
-        uses: ad-m/github-push-action@v0.5.0
+        uses: ad-m/github-push-action@v0.6.0
         with:
           branch: ${{ github.ref }}         
           github_token: ${{ secrets.GITHUB_TOKEN }}
