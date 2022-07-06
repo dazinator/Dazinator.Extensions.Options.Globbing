@@ -84,6 +84,6 @@ jobs:
       run: dotnet pack src --no-build --configuration Release /p:PackageVersion=${{ env.GitVersion_SemVer }}
 
     - name: Push nuget
-      run: dotnet nuget push "src/*.nupkg" -s github 
+      run: dotnet nuget push "src/**/*.nupkg" -s github 
 
 
