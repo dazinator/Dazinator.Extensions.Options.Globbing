@@ -76,3 +76,11 @@ jobs:
 
     - name: Test
       run: dotnet test src -c Release --no-build --verbosity normal
+    
+    - name: Configure nuget
+      run: dotnet nuget add source --username dazinator --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/dazinator/index.json"
+    
+    - name: Pack nuget
+      run: dotnet pack src --no-build --configuration Release /p:PackageVersion=${{ env.GitVersion_SemVer }}
+
+
